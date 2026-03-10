@@ -22,7 +22,3 @@ from sklearn.ensemble import RandomForestClassifier
 rfc=RandomForestClassifier(n_estimators=100)
 
 rfc.fit(X_train,y_train)
-
-y_pred=rfc.predict(X_test)
-from sklearn.metrics import accuracy_score
-print(accuracy_score(y_pred,y_test))
