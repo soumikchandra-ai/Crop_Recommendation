@@ -1,3 +1,6 @@
+let lat
+let lon
+
 function getLocation() {
 
     if (navigator.geolocation) {
@@ -12,8 +15,10 @@ function getLocation() {
 
 function showPosition(position) {
 
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
+    console.log(lat)
+    console.log(lon)
 
     document.getElementById("result").innerHTML =
     "Latitude: " + lat + "<br>Longitude: " + lon;
