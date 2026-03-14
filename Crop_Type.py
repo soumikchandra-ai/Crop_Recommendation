@@ -11,4 +11,3 @@ def crop_pred(N,P,K,temp,humid,pH,rainfall):
     
     crop_type=le_crop.inverse_transform(y_pred)
     print(crop_type)
-    
